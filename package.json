@@ -1,13 +1,17 @@
 {
+  "homepage": "http//:troublelap1.github.io/Blits3D",
   "name": "3dproject",
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^2.9.9"
   },
   "dependencies": {
